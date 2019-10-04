@@ -1,0 +1,1 @@
+Show Electroneum (ETN) prices in your VirtueMart eCommerce site. Plugins displays automatically prices on the product details and cart page of VirtueMart. IT will convert your current currency live to the current ETN exchange rate and display this price. Combine with the VirtueMart Electroneum Payment Method for a smooth Electroneum payment experience.
