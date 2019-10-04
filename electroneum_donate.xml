@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="content" method="upgrade">
+	<name>Electroneum Donate Plugin</name>
+	<author>Joomla! Project</author>
+	<creationDate>Oct 2018</creationDate>
+	<copyright>Copyright (C) 2005 - 2018 Open Source Matters. All rights reserved.</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>admin@joomla.org</authorEmail>
+	<authorUrl>www.joomla.org</authorUrl>
+	<version>1.0.1</version>
+	<description>
+	 <![CDATA[<html>
+		<table class="table">
+		   <tr><td><a href="https://joomlapro.com" target="_blank"><img src="https://joomlapro.com/images/logo1.png"></a></td><td><h3>Electroneum Donate Plugin is downloaded from joomlapro.com.</h3><hr>We have built quality Joomla extension since 2012. JoomlaPro is a company under <a href="http://joomlaproffs.se/" target="_blank">joomlaproffs.se</a></td>
+		   </tr>
+		   <tr>
+		   <td colspan="2" style="text-align:right; padding:10px 0 0 0; border-bottom:0px none">
+		   <a href="https://joomlaproffs.se/" target="_blank"><img src="https://joomlapro.com/images/logo2.png"></a>
+		   </td>
+		   </tr>
+		   <tr>
+		   <td colspan="2" style="border-top:0px; display:none;" id="donation_tr"> 
+		   <table class="table table-striped">
+		    <tr>
+			<td>
+		      <div class="" style="margin-bottom:10px; ">
+			  <p>Please donate to the creators and maintainers of this Electroneum Donate plugin by Joomlapro.com.</p>
+			  <a id="activebtn" style="width:163px;" class="modal btn btn-success" href="https://joomlapro.com/donate" rel="{handler: 'iframe', size: {x: 500, y: 450}}">Donate</a>
+			  </div>
+			  <p>If problem please go to <a href="https://joomlapro.com/donate" target="_blank">https://joomlapro.com/donate</a></p>
+			  <div style="clear:both;"></div>
+			  <div>
+		      <span style="margin:10px 0px; display:block;">For basic usage :</span>
+			  <strong>{etndonate}</strong><br />
+			  </div>
+			  
+			  </td>
+			</tr>
+		  </table>
+			 
+		   </td>
+	   </table>
+	 ]]>
+	</description>
+	<files>
+		<filename plugin="electroneum_donate">electroneum_donate.php</filename>
+		<filename>License_GPL2.txt</filename>
+		<folder>src</folder>
+		<folder>fields</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/content/electroneum_donate/fields">
+				<field type="donate" name="donate" />
+				<field class="downloadkey" 	name="download_key" type="text" label="Download ID"  description="Download Id" default="" />
+			    <field type="text" name="apikey" default="" class="input-large" size="55" label="API Key" description="API Key"/>
+				<field type="text" name="secret" default="" class="input-large" size="55" label="API Secret" description="API Secret"/>
+				<field type="text" name="outlet" default="" class="input-large" size="55" label="Outlet ID" description="Vendor Id"/>
+				<field
+					name="logo"
+					type="media"
+					label="Logo Image"
+					description="Select Logo Image"
+				/>
+				<field
+					  name="description"
+					  type="text"
+					  default=""
+					  label="Text"
+					  description="Text Want to display"
+				/>
+				<field
+					  name="btntxt"
+					  type="text"
+					  default="Donate"
+					  label="Text on Donate Button"
+					  description="Dontate Button Text"
+				/>
+				<field 
+					  name="color"
+					  type="color"
+					  default="20"
+					  label="Color on Donate Button"
+					  description="Dontate Button Color"
+				/>
+				<field 
+					name="electroneum_logo"
+					type="radio"
+					label="Show Electroneum Logo"
+					description="Show Electroneum Logo"
+					class="btn-group btn-group-yesno"
+					default="1"
+					filter="integer"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field type="text" name="successurl" default="" class="input-large" size="55" label="Success Url" description="Success Url" />
+				<field type="text" name="thanksmsg" default="" class="input-large" size="55" label="Thanks Message" description="Thanks Message" />
+				
+			</fieldset>
+		</fields>
+	</config>
+	   <updateservers>
+  	      <server type="extension" name="Electroneum Donate Plugin">
+		  	<![CDATA[https://joomlapro.com/index.php?option=com_rdsubs&view=updater&cat=22&type=3&format=xml ]]>
+		  </server>
+      	</updateservers>
+</extension>
+
+
